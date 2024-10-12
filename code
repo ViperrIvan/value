@@ -1,0 +1,18 @@
+def dollars_rub(dollars):
+    print(f'доллары в рубли {round(dollars*96.07)}')
+def euro_rub(euro):
+    print(f'евро в рубли {round(euro*105,11)}')
+def won_rub(won):
+    print(f'вон в рубли {round(won*0.071194)}')
+def uane_rub(uane):
+    print(f'юани в рубли {round(uane*13.48)}')
+answer = int(input('введите количество валюты: '))
+i = int(input('Введите валюту: доллар-1, евро-2, вон-3, юани-4 '))
+if i == 1:
+    dollars_rub(answer)
+if i == 2:
+    euro_rub(answer)
+if i == 3:
+    won_rub(answer)
+if i == 4:
+    uane_rub(answer)
